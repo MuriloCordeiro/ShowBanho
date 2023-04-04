@@ -43,6 +43,9 @@ export default function LayoutDesk(props: any) {
               color="#B37443"
               _hover={{ bgColor: "#B37443", color: "white" }}
               fontWeight="Regular"
+              onClick={() => {
+                Router.push("/");
+              }}
             >
               Início
             </Button>
