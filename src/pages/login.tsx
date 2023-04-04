@@ -132,7 +132,7 @@ export default function HomeLogin() {
       setLoading(false);
     }
   }
-
+  const Router = useRouter();
   return (
     <>
       {isMobileVersion ? (
@@ -338,7 +338,7 @@ export default function HomeLogin() {
 
                 <Text
                   fontSize="25px"
-                  color="#081F49"
+                  color="#B37443"
                   fontWeight="bold"
                   alignSelf="center"
                 >
@@ -424,12 +424,15 @@ export default function HomeLogin() {
                   mt="1rem"
                   h="40px"
                   borderRadius="15px"
-                  bgColor="#4887FA"
+                  bgColor="#B37443"
                   // variant="solid"
                   colorScheme="#021C45"
                   color="white"
+                  // onClick={() => {
+                  //   handleLogin(email, password);
+                  // }}
                   onClick={() => {
-                    handleLogin(email, password);
+                    Router.push("/budgetPage");
                   }}
                 >
                   Entrar
@@ -455,7 +458,7 @@ export default function HomeLogin() {
                   // bgColor="#4887FA"
                   borderRadius="15px"
                   colorScheme="#021C45"
-                  color="#4887FA"
+                  color="#B37443"
                   variant="outline"
                   onClick={signInWithGoogle}
                   aria-label={"Entrar com google"}
