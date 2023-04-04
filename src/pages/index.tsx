@@ -112,6 +112,7 @@ export default function Home() {
           p="2rem"
           direction="column"
         >
+          testes
           <Flex w="30%" mb="2rem">
             <Input placeholder="Filtros" borderRadius="20px" mr="1rem" />
             <Input placeholder="Pesquisar" borderRadius="20px" mr="1rem" />
